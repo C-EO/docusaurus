@@ -5,14 +5,15 @@
  * LICENSE file in the root directory of this source tree.
  */
 
-import React from 'react';
+import React, {type ReactNode} from 'react';
 import Layout from '@theme/Layout';
+import Heading from '@theme/Heading';
 
 // See https://github.com/facebook/docusaurus/issues/6337#issuecomment-1012913647
-export default function Analytics(): JSX.Element {
+export default function Analytics(): ReactNode {
   return (
     <Layout>
-      <h1>Test Analytics</h1>
+      <Heading as="h1">Test Analytics</Heading>
       <div>
         <button
           type="button"

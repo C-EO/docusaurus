@@ -38,6 +38,50 @@ const sidebars = {
           label: 'External Link test',
           href: 'https://docusaurus.io',
         },
+        {
+          type: 'category',
+          label: 'Sidebar item description tests',
+          description: 'Some custom category description',
+          link: {
+            type: 'generated-index',
+          },
+          items: [
+            {
+              type: 'link',
+              label: 'Link without description',
+              href: 'https://docusaurus.io',
+            },
+            {
+              type: 'link',
+              label: 'Link with description',
+              href: 'https://docusaurus.io',
+              description: 'Some link description',
+            },
+            {
+              type: 'category',
+              label: 'Category without description',
+              items: [
+                {
+                  type: 'link',
+                  label: 'Link ',
+                  href: 'https://docusaurus.io',
+                },
+              ],
+            },
+            {
+              type: 'category',
+              label: 'Category with description',
+              description: 'Some category description',
+              items: [
+                {
+                  type: 'link',
+                  label: 'Link ',
+                  href: 'https://docusaurus.io',
+                },
+              ],
+            },
+          ],
+        },
       ],
     },
     {
@@ -113,7 +157,7 @@ const sidebars = {
         {
           type: 'html',
           value:
-            '<span style="border-top: 1px solid var(--ifm-color-gray-500); display: block;margin: 0.5rem 0 0.25rem 1rem;" />',
+            '<span style="border-top: 1px solid var(--ifm-color-gray-500); display: block;margin: 0.5rem 0 0.25rem 1rem;" ></span>',
         },
         // Image
         {
